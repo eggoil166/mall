@@ -17,7 +17,7 @@ def generate_head_bboxes(annotations):
     return bboxes
 
 def _h2bbox(points):
-    """Helper: Convert head points to bounding boxes (paper Eq. 1)."""
+    """Helper: Convert head points to bounding boxes."""
     plotboxes, bboxes = [], []
     for point in points:
         bw = bh = 5
